@@ -50,7 +50,7 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		gopath := filepath.Clean(filepath.Join(cwd, "../../../../"))
+		gopath := cwd
 		log.Println("GOPATH is", gopath)
 		os.Setenv("GOPATH", gopath)
 	}
